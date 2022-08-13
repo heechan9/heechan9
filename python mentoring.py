@@ -7,7 +7,14 @@ problem_ex
 answer_ex
 
 1.가독성을 해친다,일관된 코드를 작성해야만 다른 사람이 코드를 읽기 쉽고 코드의 오해를 줄이는데 도움이 된다.
-2.
+2.32줄 들여쓰기를 네개의 스페이스 또는 탭을 사용해야한다.
+3.2 5 1 3   
+  2:두개의 값이 Q에 들어가있기 때문에 2가 출력된다.
+  5:Q는 선입선출에 구조를 가지고 있기 때문에 오래된 데이터인 5가 출력된다.
+  1:Q의  저장공간에 있는  데이터의 개수 출력
+  3:저장공간에 있는 가장 오래된 데이터 출력 
+
+
 '''
 class Empty(Exception):
     pass
@@ -17,10 +24,10 @@ class ArrayQueue:
     def __init__(self):
         self._data = []
 
-
+    
     def __len__(self):
         return len(self._data)
-
+    
     def is_empty(self):
         if len(self._data):
             return False
@@ -49,7 +56,7 @@ class ArrayQueue:
 
 Q = ArrayQueue()
 Q.enqueue(5)
-Q.enqueue(3)
+Q.enqueue(3)        
 print(len(Q))
 print(Q.dequeue())
 print(len(Q))
