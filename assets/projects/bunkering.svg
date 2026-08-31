@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#0c1d2a"/><stop offset="1" stop-color="#123d4b"/></linearGradient></defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <path d="M0 294C190 265 320 326 490 291S790 258 1200 301V360H0Z" fill="#0a2633"/><path d="M0 294C190 265 320 326 490 291S790 258 1200 301" fill="none" stroke="#57b7c4" stroke-opacity=".45" stroke-width="2"/>
+  <g transform="translate(83 70)">
+    <text y="38" fill="#69ced2" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">MARITIME DECISION SUPPORT</text>
+    <text y="98" fill="#f5fbfc" font-family="Arial,sans-serif" font-size="48" font-weight="700">Bunkering AI</text>
+    <text y="143" fill="#afd0d4" font-family="Arial,sans-serif" font-size="23">Fuel-purchase policies, fair evaluation, and reproducible evidence</text>
+    <g transform="translate(0 184)" font-family="Arial,sans-serif" font-size="16" font-weight="700">
+      <rect width="128" height="38" rx="19" fill="#164653"/><text x="64" y="25" fill="#c7f3f3" text-anchor="middle">GYMNASIUM</text>
+      <rect x="144" width="137" height="38" rx="19" fill="#164653"/><text x="212" y="25" fill="#c7f3f3" text-anchor="middle">RULE POLICIES</text>
+      <rect x="297" width="122" height="38" rx="19" fill="#164653"/><text x="358" y="25" fill="#c7f3f3" text-anchor="middle">DOUBLE DQN</text>
+    </g>
+  </g>
+  <g transform="translate(865 82)">
+    <path d="M0 142C85 60 173 196 260 72" fill="none" stroke="#7ee0df" stroke-width="4" stroke-dasharray="8 10"/>
+    <g fill="#7ee0df"><circle cy="142" r="9"/><circle cx="128" cy="130" r="9"/><circle cx="260" cy="72" r="9"/></g>
+    <path d="M82 177h139l-28 38H109z" fill="#d6f5f3"/><path d="M118 128h61v49h-61zM130 105h35v23h-35z" fill="#82cfd3"/><path d="M75 215h155" stroke="#7ee0df" stroke-opacity=".55" stroke-width="3"/>
+  </g>
+</svg>
