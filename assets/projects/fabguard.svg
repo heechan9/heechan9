@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1"><stop stop-color="#0b1726"/><stop offset="1" stop-color="#102b47"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#5fa8d3" stroke-opacity=".08"/></pattern>
+  </defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/><rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+  <g transform="translate(83 70)">
+    <text y="38" fill="#79c4f2" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">SEMICONDUCTOR MANUFACTURING AI</text>
+    <text y="98" fill="#f5f9fc" font-family="Arial,sans-serif" font-size="48" font-weight="700">FabGuard AI</text>
+    <text y="143" fill="#aabfd0" font-family="Arial,sans-serif" font-size="23">Risk-ranked inspection support with evidence-first validation</text>
+    <g transform="translate(0 184)" font-family="Arial,sans-serif" font-size="16" font-weight="700">
+      <rect width="142" height="38" rx="19" fill="#173c5a"/><text x="71" y="25" fill="#bfe6ff" text-anchor="middle">TEMPORAL TEST</text>
+      <rect x="158" width="124" height="38" rx="19" fill="#173c5a"/><text x="220" y="25" fill="#bfe6ff" text-anchor="middle">TOP-K REVIEW</text>
+      <rect x="298" width="135" height="38" rx="19" fill="#173c5a"/><text x="365" y="25" fill="#bfe6ff" text-anchor="middle">HUMAN DECISION</text>
+    </g>
+  </g>
+  <g transform="translate(935 180)">
+    <circle r="105" fill="#0b2138" stroke="#63b3e8" stroke-width="2"/>
+    <circle r="78" fill="none" stroke="#63b3e8" stroke-opacity=".35"/>
+    <circle r="49" fill="none" stroke="#63b3e8" stroke-opacity=".25"/>
+    <g fill="#63b3e8"><circle cx="-46" cy="-41" r="7"/><circle cx="28" cy="-60" r="7"/><circle cx="54" cy="-8" r="7"/><circle cx="-22" cy="18" r="7"/><circle cx="34" cy="48" r="7"/><circle cx="-61" cy="55" r="7"/></g>
+    <path d="M-46-41L28-60 54-8-22 18 34 48-61 55Z" fill="none" stroke="#bfe6ff" stroke-opacity=".45"/>
+  </g>
+</svg>
