@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#101d24"/><stop offset="1" stop-color="#173b3a"/></linearGradient></defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <g transform="translate(83 70)">
+    <text y="38" fill="#7dd7bd" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">PUBLIC-DATA RISK INTEGRATION</text>
+    <text y="98" fill="#f5fbf9" font-family="Arial,sans-serif" font-size="48" font-weight="700">TriGuard AI</text>
+    <text y="143" fill="#b3cec6" font-family="Arial,sans-serif" font-size="23">Multi-source consistency checks and regional decision support</text>
+    <g transform="translate(0 184)" font-family="Arial,sans-serif" font-size="16" font-weight="700">
+      <rect width="128" height="38" rx="19" fill="#1e4b44"/><text x="64" y="25" fill="#cdf5e7" text-anchor="middle">12 DATASETS</text>
+      <rect x="144" width="132" height="38" rx="19" fill="#1e4b44"/><text x="210" y="25" fill="#cdf5e7" text-anchor="middle">5 AGENCIES</text>
+      <rect x="292" width="154" height="38" rx="19" fill="#1e4b44"/><text x="369" y="25" fill="#cdf5e7" text-anchor="middle">STREAMLIT MVP</text>
+    </g>
+  </g>
+  <g transform="translate(938 180)" stroke="#8ce1c7" stroke-width="3">
+    <path d="M0-88L82-20 52 78-52 78-82-20Z" fill="none" opacity=".55"/>
+    <path d="M0 0L0-88M0 0L82-20M0 0L52 78M0 0L-52 78M0 0L-82-20" opacity=".55"/>
+    <g fill="#8ce1c7" stroke="none"><circle r="14"/><circle cy="-88" r="10"/><circle cx="82" cy="-20" r="10"/><circle cx="52" cy="78" r="10"/><circle cx="-52" cy="78" r="10"/><circle cx="-82" cy="-20" r="10"/></g>
+  </g>
+</svg>
