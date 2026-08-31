@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#111827"/><stop offset="1" stop-color="#27233f"/></linearGradient></defs>
+  <rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+  <g transform="translate(83 70)">
+    <text y="38" fill="#a8a2ff" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="3">AUTONOMOUS-SYSTEM SECURITY</text>
+    <text y="98" fill="#f8f7ff" font-family="Arial,sans-serif" font-size="48" font-weight="700">Adversarial AI Security</text>
+    <text y="143" fill="#c2bfd7" font-family="Arial,sans-serif" font-size="23">Reproducible clean baselines and bounded FGSM evaluation</text>
+    <g transform="translate(0 184)" font-family="Arial,sans-serif" font-size="16" font-weight="700">
+      <rect width="140" height="38" rx="19" fill="#312d55"/><text x="70" y="25" fill="#dedbff" text-anchor="middle">781 SAMPLES</text>
+      <rect x="156" width="131" height="38" rx="19" fill="#312d55"/><text x="221" y="25" fill="#dedbff" text-anchor="middle">SHA-256</text>
+      <rect x="303" width="151" height="38" rx="19" fill="#312d55"/><text x="378" y="25" fill="#dedbff" text-anchor="middle">L∞ CONTRACT</text>
+    </g>
+  </g>
+  <g transform="translate(895 86)">
+    <rect width="205" height="188" rx="16" fill="#171829" stroke="#716bd0"/>
+    <path d="M25 131c34-29 54-65 88-75 19-6 33 11 41 36 14 4 26 14 28 39z" fill="#a8a2ff" fill-opacity=".5"/>
+    <path d="M22 146h166" stroke="#d4d1ff" stroke-width="3"/>
+    <g stroke="#ff7890" stroke-width="2" opacity=".65"><path d="M15 28l174 132M30 17l162 124M17 72l120 91M67 18l122 95"/></g>
+    <text x="102" y="218" fill="#b9b5dc" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">CLEAN → PERTURBED → VERIFIED</text>
+  </g>
+</svg>
