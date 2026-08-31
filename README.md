@@ -22,12 +22,47 @@ I turn manufacturing and maritime problems into testable AI systems, reproducibl
 
 ## Featured Projects
 
-| Project | Role | Verified scope |
-|---|---|---|
-| [**FabGuard AI**](https://github.com/heechan9/fabguard-ai) · [Live](https://fabguard-ai.vercel.app/) | Individual project · Industrial AI validation and deployment | UCI SECOM risk prioritization, leakage-controlled evaluation, temporal holdout, Top-k inspection support, limitations documentation, automated tests, and Vercel deployment |
-| [**Bunkering AI**](https://github.com/heechan9/bunkering-ai) | Project Lead · Reinforcement-learning decision support | Gymnasium environment, three rule-based strategies, Double DQN pipeline, fair-evaluation contract, and reproducible analysis of 6,028 Ulsan Port Authority bunkering records |
-| [**Adversarial AI Security**](https://github.com/heechan9/AdversarialAI_Security) | Experiment implementation and validation | Reproduced CNN/MobileNetV2 clean baselines on 781 ship images, FGSM evaluation pipeline, model/dataset integrity checks, result bundles, and reproducibility documentation |
-| [**TriGuard AI**](https://github.com/heechan9/triguard-ai) | Project Lead · Data integration and MVP | Integrated 12 public datasets from five institutions into a regional force-operation risk score with anomaly checks, consistency validation, and a Streamlit decision-support MVP |
+### FabGuard AI
+
+<a href="https://github.com/heechan9/fabguard-ai"><img src="./assets/projects/fabguard.svg" alt="FabGuard AI project preview" width="100%" /></a>
+
+**Individual project · Industrial AI validation and deployment**  
+UCI SECOM risk prioritization with leakage-controlled evaluation, temporal holdout, Top-k inspection support, explicit limitations, automated tests, and public deployment. The system supports inspection prioritization; it does not claim automated root-cause diagnosis.
+
+[Repository](https://github.com/heechan9/fabguard-ai) · [Live demo](https://fabguard-ai.vercel.app/)
+
+---
+
+### Bunkering AI
+
+<a href="https://github.com/heechan9/bunkering-ai"><img src="./assets/projects/bunkering.svg" alt="Bunkering AI project preview" width="100%" /></a>
+
+**Project Lead · Reinforcement-learning decision support**  
+Gymnasium-based bunkering environment, three rule-based strategies, Double DQN pipeline, fair-evaluation contract, evidence audit, and reproducible analysis of 6,028 Ulsan Port Authority records. DQN superiority is not claimed before an official like-for-like evaluation.
+
+[Repository](https://github.com/heechan9/bunkering-ai)
+
+---
+
+### Adversarial AI Security
+
+<a href="https://github.com/heechan9/AdversarialAI_Security"><img src="./assets/projects/adversarial.svg" alt="Adversarial AI Security project preview" width="100%" /></a>
+
+**Experiment implementation and validation**  
+Reproduced CNN and MobileNetV2 clean baselines on a 781-image ship dataset, with an FGSM evaluation pipeline, dataset and model integrity checks, bounded-perturbation validation, result bundles, and reproducibility documentation.
+
+[Repository](https://github.com/heechan9/AdversarialAI_Security)
+
+---
+
+### TriGuard AI
+
+<a href="https://github.com/heechan9/triguard-ai"><img src="./assets/projects/triguard.svg" alt="TriGuard AI project preview" width="100%" /></a>
+
+**Project Lead · Public-data integration and MVP**  
+Integrated 12 public datasets from five institutions into a regional force-operation risk score with anomaly checks, consistency validation, and a Streamlit decision-support MVP.
+
+[Repository](https://github.com/heechan9/triguard-ai)
 
 ## Engineering Strengths
 
