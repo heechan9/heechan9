@@ -20,6 +20,8 @@ AI의 성능뿐 아니라 데이터 출처, 평가 조건, 실패와 한계까�
 - 강점: 문제정의, 실험설계, 데이터·모델 검증, GitHub 협업, 기술문서화, 웹 배포
 - AI 에이전트를 구현·검수·문서화에 활용하되, 최종 판단과 기여 기록은 사람이 책임지는 방식으로 작업
 
+*Electronic Engineering graduate with an interdisciplinary major in Smart Factory, focused on evidence-first industrial AI across semiconductor manufacturing, maritime systems, and autonomous-system security.*
+
 > 좋은 AI 프로젝트는 높은 숫자만 보여주는 것이 아니라,  
 > **그 숫자가 어떤 데이터와 조건에서 나왔는지 설명할 수 있어야 한다**고 생각합니다.
 
@@ -33,6 +35,8 @@ AI의 성능뿐 아니라 데이터 출처, 평가 조건, 실패와 한계까�
 
 UCI SECOM 제조 데이터를 이용해 제한된 점검 자원을 고위험 생산 건에 우선 배치하는 의사결정 지원 실험입니다. 데이터 누출을 통제한 평가, 시간순 홀드아웃, Top-k 점검, 자동 테스트와 공개 웹 데모까지 연결했습니다. 자동 원인진단이나 생산 적용 완료를 주장하지 않고, 현재 결과의 한계를 명시합니다.
 
+*An industrial-AI decision-support experiment for prioritizing high-risk semiconductor inspections, with leakage-controlled evaluation, temporal holdout validation, automated tests, and explicit claim boundaries.*
+
 [저장소](https://github.com/heechan9/fabguard-ai) · [웹 데모](https://fabguard-ai.vercel.app/)
 
 ---
@@ -44,6 +48,8 @@ UCI SECOM 제조 데이터를 이용해 제한된 점검 자원을 고위험 생
 **프로젝트 리드 · Reinforcement-learning decision support**
 
 울산항만공사 공공데이터 6,028건을 바탕으로 Gymnasium 시뮬레이션 환경, 3개 규칙 기반 전략, Double DQN 파이프라인과 공정한 비교평가 계약을 구축했습니다. 공식 동일조건 평가가 완료되기 전에는 DQN의 우월성을 주장하지 않습니다.
+
+*A maritime fuel-purchasing decision-support project combining a Gymnasium simulation environment, three rule-based strategies, a Double DQN pipeline, and a reproducible fair-evaluation contract.*
 
 [저장소](https://github.com/heechan9/bunkering-ai)
 
@@ -57,6 +63,8 @@ UCI SECOM 제조 데이터를 이용해 제한된 점검 자원을 고위험 생
 
 선박 이미지 781장으로 CNN·MobileNetV2 기준 성능을 재현하고 FGSM 공격 평가 파이프라인을 구현했습니다. 데이터·모델 해시, 섭동 범위, 결과 번들과 재현성 문서를 통해 실험 결과를 추적할 수 있게 구성했습니다.
 
+*A reproducible adversarial-robustness evaluation pipeline for ship-image classifiers, including clean baselines, FGSM attacks, integrity hashes, perturbation checks, and traceable result bundles.*
+
 [저장소](https://github.com/heechan9/AdversarialAI_Security)
 
 ---
@@ -68,6 +76,8 @@ UCI SECOM 제조 데이터를 이용해 제한된 점검 자원을 고위험 생
 **프로젝트 리드 · Public-data integration & MVP**
 
 5개 기관의 공공데이터 12종을 통합해 14개 지역 병력운용 위험도를 산출하고, 이상징후 확인과 Streamlit 의사결정 지원 MVP를 구현했습니다. 위험점수·대시보드·문서 간 일관성을 독립 감사 도구와 변이 테스트로 검증했습니다.
+
+*A public-data decision-support MVP integrating 12 datasets from five institutions into regional force-operation risk scores, with consistency auditing and mutation-based validation.*
 
 [저장소](https://github.com/heechan9/triguard-ai)
 
