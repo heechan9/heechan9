@@ -47,7 +47,7 @@ UCI SECOM 제조 데이터를 이용해 제한된 점검 자원을 고위험 생
 
 **프로젝트 리드 · Reinforcement-learning decision support**
 
-울산항만공사 공공데이터 6,028건을 바탕으로 Gymnasium 시뮬레이션 환경, 3개 규칙 기반 전략, Double DQN 파이프라인과 공정한 비교평가 계약을 구축했습니다. 공식 동일조건 평가가 완료되기 전에는 DQN의 우월성을 주장하지 않습니다.
+Gymnasium 가상 항해 환경에서 3개 규칙 기반 전략과 Double DQN을 동일한 조건으로 평가하고, 울산항만공사 공공데이터 6,028건으로 업무변수의 구조를 검토했습니다. 공식 평가에서 Double DQN은 성공률 100%와 가장 높은 평균 보상을 보였지만 Safe Stock보다 급유횟수와 합성비용이 높아 전반적인 우월성을 주장하지 않습니다.
 
 *A maritime fuel-purchasing decision-support project combining a Gymnasium simulation environment, three rule-based strategies, a Double DQN pipeline, and a reproducible fair-evaluation contract.*
 
@@ -80,6 +80,17 @@ UCI SECOM 제조 데이터를 이용해 제한된 점검 자원을 고위험 생
 *A public-data decision-support MVP integrating 12 datasets from five institutions into regional force-operation risk scores, with consistency auditing and mutation-based validation.*
 
 [저장소](https://github.com/heechan9/triguard-ai)
+
+## 🔎 프로젝트 증거 지도 | Evidence Map
+
+| 프로젝트 | 해결하려는 문제 | 제 역할 | 현재 확인된 증거 | 다음 검증 |
+|---|---|---|---|---|
+| FabGuard AI | 제한된 제조 점검 자원의 우선순위 | 개인 프로젝트 오너·의사결정 | 시간순 홀드아웃, Top-K 결과, 웹 데모 | 독립 제조데이터·현장 단계 도입 |
+| Bunkering AI | 안전·비용을 함께 보는 선박 급유 판단 | 프로젝트 리드·평가 방향·통합 | 정책 4종 공식 평가, 139 tests, 근거감사 8/8 | 다중 학습 seed·실제 운항 변수 |
+| Adversarial AI | 선박 이미지 모델의 공격 취약성 검증 | 범위·검증 기준 선정 및 Windows 재현 검토 | Clean 781장, FGSM 계약, Claim 감사 | 공식 epsilon 확정·추가 공격/방어 |
+| TriGuard AI | 분산된 공공데이터 기반 지역 위험 점검 | 프로젝트 리드·데이터/시나리오 선정 | 12종 통합, 지도·데모, 일관성 감사 | 가중치 외부검증·운영 효과 평가 |
+
+각 수치는 해당 저장소의 정본 결과와 역할 문서를 기준으로 하며, 팀 프로젝트의 코드 기여는 프로젝트별 `CONTRIBUTIONS.md`에 따로 기록합니다.
 
 ## 🧭 일하는 방식 | Engineering Principles
 
