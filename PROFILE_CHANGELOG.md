@@ -25,3 +25,8 @@ Visual mapping: maritime vessel and port = Bunkering AI / Adversarial AI; semico
 
 - **Codex (OpenAI)**: identified the broken GitHub-rendered image after inspecting the live profile, re-encoded the selected banner as a standard optimized JPEG, changed the asset path to bypass the failed cached object, and verified the raw image dimensions before release.
 - **Heechan Choi (`heechan9`)**: reported the live rendering failure and required confirmation on the actual public profile rather than relying on repository state alone.
+
+### Taller profile hero
+
+- **Codex (OpenAI)**: expanded the selected industrial AI composition to a 3:2 canvas, preserving the maritime, semiconductor-fab and integrated-control-room mapping while approximately doubling its visible height relative to the former ultra-wide banner.
+- **Heechan Choi (`heechan9`)**: requested stronger mobile and desktop visibility and approved the established cross-project visual direction.
