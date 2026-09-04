@@ -6,3 +6,10 @@
 - **Design and implementation — Codex (OpenAI)**: generated the original industrial-AI profile banner; restructured the bilingual README; verified repository ownership, project links, role boundaries, and claim language.
 
 The banner is an independently generated portfolio concept. It does not represent an affiliation with any depicted company, facility, or institution.
+
+## 2026-09 — Maritime night identity refresh
+
+- **Direction and approval — Heechan Choi (`heechan9`)**: requested a more majestic night/dusk identity centered on ships and industrial systems, distinct from the FabGuard semiconductor visual.
+- **Design and implementation — Codex (OpenAI)**: generated and integrated the original smart-port night banner, optimized the asset for README delivery, and preserved the existing evidence-first project narrative.
+
+The scene is a generated portfolio concept, not a photograph of a real deployment, employer, partner, port, or vessel.

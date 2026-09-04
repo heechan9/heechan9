@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/heechan-industrial-ai-profile-banner-v2.png" alt="반도체 제조, 스마트 해운, 자율시스템을 연결한 Heechan Choi의 산업 AI 포트폴리오 배너" width="100%" />
+<img src="./assets/heechan-industrial-ai-profile-banner-v3.jpg" alt="야간 스마트 항만의 대형 상선과 산업 AI 관제 환경을 담은 Heechan Choi의 산업 AI 포트폴리오 배너" width="100%" />
 
 # Heechan Choi · 최희찬
 
