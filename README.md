@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/heechan-industrial-ai-profile-banner-v3.jpg" alt="야간 스마트 항만의 대형 상선과 산업 AI 관제 환경을 담은 Heechan Choi의 산업 AI 포트폴리오 배너" width="100%" />
+<img src="./assets/heechan-industrial-ai-profile-banner-v4.jpg" alt="야간 스마트 항만과 대형 상선, 반도체 팹과 웨이퍼 제조, 통합 위험 관제 화면을 연결한 Heechan Choi의 산업 AI 포트폴리오 배너" width="100%" />
 
 # Heechan Choi · 최희찬
 
