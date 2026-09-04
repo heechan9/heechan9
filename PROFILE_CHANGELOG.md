@@ -20,3 +20,8 @@ The scene is a generated portfolio concept, not a photograph of a real deploymen
 - **Design and implementation — Codex (OpenAI)**: revised the banner into a balanced smart-port and semiconductor-fab composition; represented TriGuard through the multi-source control room, map displays, and cross-domain data flow rather than adding an unrelated physical scene.
 
 Visual mapping: maritime vessel and port = Bunkering AI / Adversarial AI; semiconductor fab and wafer = FabGuard; integrated control room and map signals = TriGuard. This mapping is conceptual and does not claim field deployment or institutional affiliation.
+
+### Rendering correction
+
+- **Codex (OpenAI)**: identified the broken GitHub-rendered image after inspecting the live profile, re-encoded the selected banner as a standard optimized JPEG, changed the asset path to bypass the failed cached object, and verified the raw image dimensions before release.
+- **Heechan Choi (`heechan9`)**: reported the live rendering failure and required confirmation on the actual public profile rather than relying on repository state alone.
