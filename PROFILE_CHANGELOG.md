@@ -13,3 +13,10 @@ The banner is an independently generated portfolio concept. It does not represen
 - **Design and implementation — Codex (OpenAI)**: generated and integrated the original smart-port night banner, optimized the asset for README delivery, and preserved the existing evidence-first project narrative.
 
 The scene is a generated portfolio concept, not a photograph of a real deployment, employer, partner, port, or vessel.
+
+## 2026-09 — Four-project portfolio composition
+
+- **Direction and approval — Heechan Choi (`heechan9`)**: required the profile hero to represent semiconductor manufacturing as clearly as maritime systems and to include TriGuard without visual clutter.
+- **Design and implementation — Codex (OpenAI)**: revised the banner into a balanced smart-port and semiconductor-fab composition; represented TriGuard through the multi-source control room, map displays, and cross-domain data flow rather than adding an unrelated physical scene.
+
+Visual mapping: maritime vessel and port = Bunkering AI / Adversarial AI; semiconductor fab and wafer = FabGuard; integrated control room and map signals = TriGuard. This mapping is conceptual and does not claim field deployment or institutional affiliation.
