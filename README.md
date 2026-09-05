@@ -60,100 +60,90 @@
 
 ## 02 / SELECTED WORK
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### 01 · [FabGuard AI](https://github.com/heechan9/fabguard-ai) — 반도체 생산 위험 우선점검
 
-<a href="https://github.com/heechan9/fabguard-ai">
-<img src="./assets/projects/fabguard.svg" alt="FabGuard AI" width="100%" />
-</a>
+<a href="https://github.com/heechan9/fabguard-ai"><img src="./assets/projects/fabguard.svg" alt="FabGuard AI 프로젝트 미리보기" width="100%" /></a>
 
-### [FabGuard AI →](https://github.com/heechan9/fabguard-ai)
+**어떤 문제인가?**  
+반도체 생산데이터는 변수와 결측치가 많고 불량 비율이 낮아, 모든 생산 건을 같은 강도로 검사하기 어렵습니다.
 
-**반도체 생산 위험 우선점검**
+**무엇을 만들었나?**
 
-공개 제조데이터를 분석해 엔지니어가 먼저 확인할 생산 건을 제시하는 의사결정 지원 시스템입니다.
+- UCI SECOM 공개데이터 1,567건과 측정변수 590개를 이용해 고위험 생산 건의 점검 순위를 제시
+- 누출 방지 전처리, 시간순 홀드아웃, PR-AUC와 Top-K 포착률, 확률 보정 및 walk-forward 검증 적용
+- 상위 10% 점검 대상에서 실제 불량 24건 중 5건을 포착
+- Fledge 기반 엣지 운영 계층과 장기 시계열 데이터 품질 분석으로 확장 중
+- 자동 판정, 실제 팹 수율 개선 또는 현장 배포 성과로 과장하지 않고 공개데이터 실험 범위를 명시
 
-- 1,567 production records · 590 measurements
-- temporal validation · calibrated risk ranking
-- Fledge operational slice · drift monitoring
-- live product demo and reproducible evidence
+**My role:** Owner · problem framing · validation direction · release decisions  
+**Technical focus:** semiconductor quality risk ranking, temporal validation, edge operations, data quality and drift
 
-**ROLE** Product owner · validation direction · release decisions
+**확인하기:** [실행 데모](https://fabguard-ai.vercel.app/) · [실험 계약](https://github.com/heechan9/fabguard-ai/blob/main/EXPERIMENT_CONTRACT.md) · [로드맵](https://github.com/heechan9/fabguard-ai/blob/main/ROADMAP.md)
 
-[Live demo](https://fabguard-ai.vercel.app/) · [Experiment contract](https://github.com/heechan9/fabguard-ai/blob/main/EXPERIMENT_CONTRACT.md) · [Roadmap](https://github.com/heechan9/fabguard-ai/blob/main/ROADMAP.md)
+---
 
-</td>
-<td width="50%" valign="top">
+### 02 · [Bunkering AI](https://github.com/heechan9/bunkering-ai) — 선박 연료 구매 의사결정
 
-<a href="https://github.com/heechan9/bunkering-ai">
-<img src="./assets/projects/bunkering.svg" alt="Bunkering AI" width="100%" />
-</a>
+<a href="https://github.com/heechan9/bunkering-ai"><img src="./assets/projects/bunkering.svg" alt="Bunkering AI 프로젝트 미리보기" width="100%" /></a>
 
-### [Bunkering AI →](https://github.com/heechan9/bunkering-ai)
+**어떤 문제인가?**  
+선박의 연료 구매는 가격만이 아니라 잔량, 환율, 항만, 운항상태와 안전재고를 함께 판단해야 합니다.
 
-**선박 연료 구매 의사결정**
+**무엇을 만들었나?**
 
-가격·환율·연료 잔량·운항상태를 반영해 여러 급유 정책을 동일한 가상 항해 환경에서 비교합니다.
+- Gymnasium 가상 항해 환경에서 규칙 기반 정책 3종과 Double DQN을 동일 조건으로 비교
+- 연료 잔량·가격·환율·운항상태를 하나의 상태공간으로 구성
+- 안전재고 위반, 급유 횟수, 합성비용과 보상을 함께 기록
+- DQN이 일부 지표에서 개선됐지만 비용과 운용조건까지 포함한 전반적 우월성은 주장하지 않음
+- 코드, 보고서, 발표, 시연과 논문용 실험기록을 하나의 증거 체계로 관리
 
-- Gymnasium operational environment
-- three rule-based policies · Double DQN
-- safety-stock and cost trade-offs
-- experiment, report, presentation and demo package
+**My role:** Project lead · evaluation direction · system integration  
+**Technical focus:** operational simulation, reinforcement learning, safety constraints, decision support
 
-**ROLE** Project lead · evaluation direction · system integration
+**확인하기:** [저장소](https://github.com/heechan9/bunkering-ai) · [기여 기록](https://github.com/heechan9/bunkering-ai/blob/main/CONTRIBUTIONS.md)
 
-[Repository](https://github.com/heechan9/bunkering-ai) · [Contributions](https://github.com/heechan9/bunkering-ai/blob/main/CONTRIBUTIONS.md)
+---
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+### 03 · [Adversarial AI Security](https://github.com/th0oel/AdversarialAI_Security) — 자율운항선박 AI 강건성 검증
 
-<a href="https://github.com/th0oel/AdversarialAI_Security">
-<img src="./assets/projects/adversarial.svg" alt="Adversarial AI Security" width="100%" />
-</a>
+<a href="https://github.com/th0oel/AdversarialAI_Security"><img src="./assets/projects/adversarial.svg" alt="Adversarial AI Security 프로젝트 미리보기" width="100%" /></a>
 
-### [Adversarial AI Security →](https://github.com/th0oel/AdversarialAI_Security)
+**어떤 문제인가?**  
+자율시스템의 영상 AI는 사람이 알아채기 어려운 작은 입력 교란에도 잘못 판단할 수 있습니다.
 
-**자율운항선박 AI 강건성 검증**
+**무엇을 만들었나?**
 
-선박 영상 AI가 미세한 적대적 입력에서 어떻게 실패하는지 재현하고 평가합니다.
+- 선박 이미지 781장의 CNN·MobileNetV2 clean baseline 재현
+- FGSM 공격 전후 성능과 attack success rate 평가 파이프라인 구축
+- L∞ 섭동 경계, ε=0 smoke test, 모델 가중치 불변성 검증
+- 데이터·모델 SHA-256과 결과 번들로 실험 추적성 확보
+- 팀 공식 저장소와 개인 포크를 구분해 실제 기여 범위를 명확히 기록
 
-- 781-image clean baseline
-- CNN · MobileNetV2 · FGSM evaluation
-- perturbation bounds and smoke tests
-- SHA-256 integrity and reproducibility bundle
+**My role:** Experiment implementation · validation contributor  
+**Technical focus:** adversarial robustness, reproducibility, test integrity, autonomous-system safety
 
-**ROLE** Experiment implementation · validation contributor
+**확인하기:** [팀 공식 저장소](https://github.com/th0oel/AdversarialAI_Security) · [내 포크](https://github.com/heechan9/AdversarialAI_Security)
 
-[Team repository](https://github.com/th0oel/AdversarialAI_Security) · [My fork](https://github.com/heechan9/AdversarialAI_Security)
+---
 
-</td>
-<td width="50%" valign="top">
+### 04 · [TriGuard AI](https://github.com/heechan9/triguard-ai) — 공공데이터 기반 운영 위험 분석
 
-<a href="https://github.com/heechan9/triguard-ai">
-<img src="./assets/projects/triguard.svg" alt="TriGuard AI" width="100%" />
-</a>
+<a href="https://github.com/heechan9/triguard-ai"><img src="./assets/projects/triguard.svg" alt="TriGuard AI 프로젝트 미리보기" width="100%" /></a>
 
-### [TriGuard AI →](https://github.com/heechan9/triguard-ai)
+**어떤 문제인가?**  
+여러 기관에 흩어진 공공데이터는 형식과 기준이 달라 지역별 위험을 한눈에 비교하기 어렵습니다.
 
-**공공데이터 기반 운영 위험 분석**
+**무엇을 만들었나?**
 
-서로 다른 기관의 데이터를 통합해 지역별 운영 위험 신호와 판단 근거를 보여주는 MVP입니다.
+- 5개 공공기관의 데이터 12종을 통합해 14개 지역의 운영 위험 신호를 점검하는 MVP 구현
+- 지도·대시보드·위험점수·문서 사이의 일관성을 독립 감사와 변이 테스트로 검증
+- 위험 신호와 데이터 근거를 함께 표시하고 최종 판단은 사람이 수행하도록 설계
+- 위험점수가 실제 기관의 운영 명령이나 공식 예측이 아님을 명시
 
-- 12 datasets · 5 public organizations
-- 14-region risk intelligence
-- dashboard and document consistency tests
-- human oversight and explicit claim boundaries
+**My role:** Project lead · data and scenario design · MVP delivery  
+**Technical focus:** multi-source public data, decision support, consistency testing, human oversight
 
-**ROLE** Project lead · data and scenario design · MVP delivery
-
-[Repository](https://github.com/heechan9/triguard-ai)
-
-</td>
-</tr>
-</table>
+**확인하기:** [저장소](https://github.com/heechan9/triguard-ai)
 
 ## 03 / ENGINEERING PRINCIPLES
 
