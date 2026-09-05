@@ -14,9 +14,9 @@
 
 <br>
 
-[![Explore Projects](https://img.shields.io/badge/EXPLORE-PROJECTS-00D4AA?style=for-the-badge&labelColor=111827)](#selected-work)
+[![Explore Projects](https://img.shields.io/badge/EXPLORE-PROJECTS-00D4AA?style=for-the-badge&labelColor=111827)](#02--selected-work)
 [![Live Product](https://img.shields.io/badge/VIEW-LIVE_DEMO-7C3AED?style=for-the-badge&labelColor=111827&logo=vercel&logoColor=white)](https://fabguard-ai.vercel.app/)
-[![Collaborate](https://img.shields.io/badge/OPEN_TO-COLLABORATION-2563EB?style=for-the-badge&labelColor=111827)](#lets-build-together)
+[![Collaborate](https://img.shields.io/badge/OPEN_TO-COLLABORATION-2563EB?style=for-the-badge&labelColor=111827)](#05--lets-build-together)
 
 <br>
 
