@@ -56,6 +56,8 @@
 
 > **Current focus —** Semiconductor Manufacturing AI → Fledge edge operations → long-horizon time-series data quality → field-ready validation in Australia
 
+<a id="selected-work"></a>
+
 ## 02 / SELECTED WORK
 
 <table>
@@ -204,6 +206,8 @@ HTML · CSS · JavaScript · Streamlit · Vercel
 </td>
 </tr>
 </table>
+
+<a id="lets-build-together"></a>
 
 ## 05 / LET'S BUILD TOGETHER
 
