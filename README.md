@@ -19,6 +19,24 @@
 
 > **한 문장으로:** 반도체 제조 AI를 중심축으로, 서로 다른 산업 현장의 데이터를 사람이 검토할 수 있는 의사결정 지원 시스템으로 연결합니다.
 
+## 30초 소개 | Start here
+
+| 질문 | 답 |
+|---|---|
+| **무슨 문제를 푸나요?** | 사람이 모든 생산 기록을 동시에 확인하기 어려운 산업 현장에서, **먼저 볼 대상을 정하는 문제**를 풉니다. |
+| **AI가 무엇을 하나요?** | 불량이나 사고를 확정하지 않고, 데이터의 위험 신호를 정렬해 **엔지니어의 점검 순서**를 제안합니다. |
+| **어디까지 검증됐나요?** | 공개 반도체 데이터 실험, 로컬 Fledge 센서 연결, 합성 태양광 데이터 품질 검증까지 완료했습니다. |
+| **무엇이 아직 아닌가요?** | 실제 공장 자동제어, 현장 수율 개선, 태양광 패널 고장진단을 입증한 제품은 아닙니다. |
+| **다음은 무엇인가요?** | 🇦🇺 호주 DKASC 실제 관측 데이터를 공통 계약과 품질 파이프라인에 통과시키는 작업입니다. |
+
+### FabGuard가 움직이는 방식
+
+**산업 데이터 입력** → **형식·품질 검사** → **위험순위 또는 품질신호 생성** → **사람이 확인하고 결정**
+
+- ✅ **완료:** 🇺🇸 SECOM V1 · 🌐 Fledge 실연동 · 🌐 Frictionless · 🇺🇸 Solar Data Tools 합성 검증
+- 🔵 **다음/계획:** 🇦🇺 DKASC → 🇬🇧 PV_Live → 🇪🇺 JRC PVGIS
+- 🟡 **후속 후보:** 🇫🇷 RTE éCO2mix — 1차 범위 동결 이후 별도 심사
+
 ## 무엇을 하는가 | What I build
 
 | 분야 | 쉽게 말하면 | 기술적으로 남기는 결과 |
@@ -43,13 +61,36 @@
 - UCI SECOM 공개데이터 1,567건과 측정변수 590개를 이용해 고위험 생산 건의 점검 순위를 제시
 - 누출 방지 전처리, 시간순 홀드아웃, PR-AUC와 Top-K 포착률, 확률 보정 및 walk-forward 검증 적용
 - 상위 10% 점검 대상에서 실제 불량 24건 중 5건을 포착
-- Fledge 기반 엣지 운영 계층과 장기 시계열 데이터 품질 분석으로 확장 중
+- Fledge v3.1.0 실연동, Frictionless 계약 검증, Solar Data Tools 2.1.5 합성 PV 품질 파이프라인까지 연결·검증
 - 자동 판정, 실제 팹 수율 개선 또는 현장 배포 성과로 과장하지 않고 공개데이터 실험 범위를 명시
 
 **My role:** Owner · problem framing · validation direction · release decisions  
 **Technical focus:** semiconductor quality risk ranking, temporal validation, edge operations, data quality and drift
 
 **확인하기:** [실행 데모](https://fabguard-ai.vercel.app/) · [실험 계약](https://github.com/heechan9/fabguard-ai/blob/main/EXPERIMENT_CONTRACT.md) · [로드맵](https://github.com/heechan9/fabguard-ai/blob/main/ROADMAP.md)
+
+#### Global data roadmap · 국가별 검증 상태
+
+| 국가·지역 | 데이터 | 역할 | 현재 상태 |
+|---|---|---|---|
+| 🇺🇸 미국 | UCI SECOM | 반도체 위험순위 연구의 정본 데이터 | ✅ V1 검증 완료 |
+| 🌐 합성 환경 | Fledge Sinusoid | REST 수집·재시작·중복격리 검증 | ✅ 로컬 실연동 완료 |
+| 🇦🇺 호주 | DKASC | 태양광 설비 실제 관측값 | 🔵 파일 확보 · E2E 처리 전 |
+| 🇬🇧 영국 | Sheffield Solar PV_Live | 지역·국가 태양광 발전량 추정값 | 🔵 후속 어댑터 계획 |
+| 🇪🇺 유럽연합 | JRC PVGIS | 기상·일사량 기반 기준·모델값 | 🔵 후속 어댑터 계획 |
+| 🇫🇷 프랑스 | RTE éCO2mix | 잠정·통합·확정값의 수정 이력 감사 | 🟡 1차 범위 동결 후 후보 |
+
+#### Toolchain roles · 도구별 역할
+
+| 계층 | 도구 | 하는 일 | 검증 상태 |
+|---|---|---|---|
+| 수집 | 🌐 **Fledge** | 센서 reading을 REST로 수집하고 재시작·중복을 처리 | ✅ 로컬 Fledge v3.1.0 |
+| 데이터 계약 | 🌐 **Frictionless Data** | 열 이름·형식·단위·필수 필드와 스키마 오류를 차단 | ✅ v5.19.0 계약 검증 |
+| PV 품질 진단 | 🇺🇸 **Solar Data Tools** | 결측·시간 이상·클리핑·용량변화 등 시계열 품질 분석 | ✅ v2.1.5 합성 smoke |
+| 의사결정·감사 | 🇰🇷 **FabGuard AI** | 우선점검 결과와 출처·버전·해시·주장 경계를 기록 | ✅ 구현·공개 데모 |
+| 최종 판단 | 👷 **현장 엔지니어** | 설비·공정 맥락을 확인하고 실제 조치를 결정 | ⏳ 현장 검증 전 |
+
+> **중요한 경계:** 태양광 데이터는 수집·품질·감사 파이프라인의 호환성 데모입니다. SECOM 반도체 모델의 외부 성능 검증이나 태양광 패널 고장진단·현장 성과로 사용하지 않습니다.
 
 ---
 
@@ -155,6 +196,10 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Fledge](https://img.shields.io/badge/Fledge-Edge_Data-2CCEBB?style=flat-square)
+![Solar Data Tools](https://img.shields.io/badge/Solar_Data_Tools-PV_Quality-F5A623?style=flat-square)
+![Frictionless](https://img.shields.io/badge/Frictionless-Data_Contract-4B8BF5?style=flat-square)
+![WSL2](https://img.shields.io/badge/WSL2-Ubuntu_22.04-E95420?style=flat-square&logo=ubuntu&logoColor=white)
 ![Gymnasium](https://img.shields.io/badge/Gymnasium-0081A5?style=flat-square)
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
@@ -188,8 +233,9 @@
 
 ## 현재 방향 | Current direction
 
-- FabGuard를 **반도체 제조 AI → Fledge 엣지 운영 → 장기 시계열 데이터 품질 분석**으로 확장
-- Solar Data Tools의 재사용 가능한 데이터 품질 방법론을 검토하고 산업설비 시계열 적용 가능성 실험
+- FabGuard의 **반도체 위험순위 V1 + Fledge 실연동 + Frictionless·Solar Data Tools 합성 검증**을 공개 증거로 유지
+- 🇦🇺 DKASC 실데이터 E2E를 다음 게이트로 진행한 뒤 🇬🇧 PV_Live와 🇪🇺 JRC PVGIS를 순차 검증
+- 🇫🇷 RTE éCO2mix는 1차 범위 동결 후 revision lineage 감사 후보로 별도 심사
 - 해양 AI 프로젝트의 실험·시연·논문화 근거 완성
 - 호주 산업 현장에서 활용할 수 있는 영문 데모와 외부 검증 패키지 준비
 - international collaboration in Industrial AI, smart manufacturing, and trustworthy autonomous systems
