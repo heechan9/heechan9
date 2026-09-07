@@ -19,6 +19,24 @@
 
 > **한 문장으로:** 반도체 제조 AI를 중심축으로, 서로 다른 산업 현장의 데이터를 사람이 검토할 수 있는 의사결정 지원 시스템으로 연결합니다.
 
+## 30초 소개 | Start here
+
+| 질문 | 답 |
+|---|---|
+| **무슨 문제를 푸나요?** | 사람이 모든 생산 기록을 동시에 확인하기 어려운 산업 현장에서, **먼저 볼 대상을 정하는 문제**를 풉니다. |
+| **AI가 무엇을 하나요?** | 불량이나 사고를 확정하지 않고, 데이터의 위험 신호를 정렬해 **엔지니어의 점검 순서**를 제안합니다. |
+| **어디까지 검증됐나요?** | 공개 반도체 데이터 실험, 로컬 Fledge 센서 연결, 합성 태양광 데이터 품질 검증까지 완료했습니다. |
+| **무엇이 아직 아닌가요?** | 실제 공장 자동제어, 현장 수율 개선, 태양광 패널 고장진단을 입증한 제품은 아닙니다. |
+| **다음은 무엇인가요?** | 🇦🇺 호주 DKASC 실제 관측 데이터를 공통 계약과 품질 파이프라인에 통과시키는 작업입니다. |
+
+### FabGuard가 움직이는 방식
+
+**산업 데이터 입력** → **형식·품질 검사** → **위험순위 또는 품질신호 생성** → **사람이 확인하고 결정**
+
+- ✅ **완료:** 🇺🇸 SECOM V1 · 🌐 Fledge 실연동 · 🌐 Frictionless · 🇺🇸 Solar Data Tools 합성 검증
+- 🔵 **다음/계획:** 🇦🇺 DKASC → 🇬🇧 PV_Live → 🇪🇺 JRC PVGIS
+- 🟡 **후속 후보:** 🇫🇷 RTE éCO2mix — 1차 범위 동결 이후 별도 심사
+
 ## 무엇을 하는가 | What I build
 
 | 분야 | 쉽게 말하면 | 기술적으로 남기는 결과 |
@@ -178,6 +196,10 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Fledge](https://img.shields.io/badge/Fledge-Edge_Data-2CCEBB?style=flat-square)
+![Solar Data Tools](https://img.shields.io/badge/Solar_Data_Tools-PV_Quality-F5A623?style=flat-square)
+![Frictionless](https://img.shields.io/badge/Frictionless-Data_Contract-4B8BF5?style=flat-square)
+![WSL2](https://img.shields.io/badge/WSL2-Ubuntu_22.04-E95420?style=flat-square&logo=ubuntu&logoColor=white)
 ![Gymnasium](https://img.shields.io/badge/Gymnasium-0081A5?style=flat-square)
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat-square&logo=pytest&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
