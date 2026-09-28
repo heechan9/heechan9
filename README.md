@@ -27,7 +27,7 @@
 
 ## 대표 프로젝트 | Featured projects
 
-코드 구현에는 AI 코딩 도구를 활용했으며, 프로젝트별 담당 범위는 기여 기록에 정리했습니다.
+프로젝트마다 제가 정한 문제와 요구사항, 직접 수행한 실험·검토를 아래에 적었습니다. 코드 구현·테스트·문서 작성에는 Codex 등 AI 도구를 활용했으며, AI가 생성한 부분과 팀원의 기여는 각 기여 기록에 구분했습니다.
 
 ### 01 · [FabGuard AI](https://github.com/heechan9/fabguard-ai) — 반도체 생산 건 우선점검
 
@@ -37,7 +37,7 @@
 
 평가 구간 392건에서 위험 상위 10%인 40건을 점검했을 때 **Fail 24건 중 5건을 포착**했습니다. 같은 수를 무작위로 점검할 때의 기대값(40 × 24/392 ≈ 2.4건)의 약 2배입니다(V1 모델). 점검 여력이 제한된 상황에서 순위화 신호는 있었지만, 평가 구간 AP(0.094)가 학습 구간 교차검증(0.216)보다 낮아 독립된 제조 데이터로 다시 검증해야 합니다.
 
-> **내 역할** · 문제 선정과 활용 범위 결정, 초기 실험 계약 제공, 결과 해석 범위 결정, 결과 검수와 배포 결정 · [기여 기록](https://github.com/heechan9/fabguard-ai/blob/main/docs/governance/AI_USAGE.md)
+> **내 역할** · UCI SECOM으로 고위험 생산 건의 점검 순서를 다루는 주제를 선정하고, 초기 실험 계약과 활용 범위를 제시했습니다. 결과 해석과 공개할 내용을 검토하고 최종 배포를 결정했습니다. [기여 기록](https://github.com/heechan9/fabguard-ai/blob/main/docs/governance/AI_USAGE.md)
 
 **근거:** [실행 데모](https://fabguard-ai.vercel.app/) · [V1 결과와 한계](https://github.com/heechan9/fabguard-ai/blob/main/results/v1/RESULTS_SUMMARY.md) · [보정·부트스트랩 등 추가 검증](https://github.com/heechan9/fabguard-ai/blob/main/docs/PHASE1_ADVANCED_VALIDATION.md) · [실험 계약](https://github.com/heechan9/fabguard-ai/blob/main/docs/validation/EXPERIMENT_CONTRACT.md) · [로드맵](https://github.com/heechan9/fabguard-ai/blob/main/docs/project/ROADMAP.md)
 
@@ -51,7 +51,7 @@
 
 합성 시뮬레이션에서 두 정책은 100회 모두 목적지에 도착했습니다. DQN은 평균 보상이 가장 높았지만, 항해당 급유 행동이 5.31회로 안전재고 규칙(1.00회)보다 많았고 합성 비용지수도 847,118 대 545,393으로 높았습니다. 이 환경의 보상은 가격이 평균보다 낮을 때 급유하면 가점을 주지만 구매량과 구매비용은 반영하지 않습니다. 따라서 **보상을 높이는 행동과 비용을 줄이는 행동이 어긋날 수 있다**는 점을 확인했습니다. 구매비용과 잔여 연료를 보상에 반영하는 설계는 후속 실험 후보입니다.
 
-> **내 역할** · 문제·요구사항·실험 방향 결정, State·Action·Reward와 평가지표 방향 검토, 안전재고 기준선 요구사항 정의, 작업 배정과 결과·보고서 통합 · Windows 독립 재현과 병합은 팀원이 수행 · [기여 기록](https://github.com/heechan9/bunkering-ai/blob/main/CONTRIBUTIONS.md)
+> **내 역할** · 팀장으로 문제와 요구사항을 정하고, State·Action·Reward 및 평가지표의 방향을 검토했습니다. 안전재고 기준선의 요구사항을 정의하고 작업 배정, 결과 검토, 멘토링 대응과 보고서 통합을 맡았습니다. Windows 독립 재현과 병합은 팀원이 수행했습니다. [기여 기록](https://github.com/heechan9/bunkering-ai/blob/main/CONTRIBUTIONS.md)
 
 **근거:** [저장소](https://github.com/heechan9/bunkering-ai) · [공식 평가와 해석 범위](https://github.com/heechan9/bunkering-ai/blob/main/docs/technical/official_evaluation.md) · [연료수지·보상 진단](https://github.com/heechan9/bunkering-ai/blob/main/docs/technical/reward_diagnostics_results_4seed.md)
 
@@ -65,7 +65,7 @@
 
 공개 이미지 781장에서 정상 정확도가 더 높았던 MobileNetV2(78.5%)는 ε=0.01 교란에서 12.4%까지 떨어졌고, CNN은 64.5%에서 41.6%가 됐습니다. 이 실험에서는 정상 정확도가 높은 모델이 교란에 더 강하지 않았습니다. 비전 모델은 정상 정확도와 별도로 입력 변화 조건에서도 시험해야 한다는 점을 보여 준 결과입니다. 단순 필터 방어의 비교 결과는 저장소에 정리했습니다.
 
-> **내 역할** · 감사·검증 범위 정의, 원본 781장과 로컬 모델로 Windows 환경에서 테스트·근거 감사를 직접 실행(PR #3·#11), 저장소 통합 범위 결정 · 이미지 시각 검토는 팀원이 수행 · [기여 기록](https://github.com/th0oel/AdversarialAI_Security/blob/main/CONTRIBUTIONS.md)
+> **내 역할** · 검증 범위와 저장소 통합 조건을 정하고, Windows PC에서 원본 781장과 두 모델로 테스트·근거 감사를 직접 실행했습니다(PR #3·#11). 가우시안·평균 필터 비교 실험도 직접 실행해 원본 결과 파일을 제공했습니다. 이미지 시각 검토는 팀원이 수행했습니다. [기여 기록](https://github.com/th0oel/AdversarialAI_Security/blob/main/CONTRIBUTIONS.md)
 
 **근거:** [팀 공식 저장소](https://github.com/th0oel/AdversarialAI_Security) · [내 포크](https://github.com/heechan9/AdversarialAI_Security) · [FGSM·필터 방어 결과](https://github.com/th0oel/AdversarialAI_Security/blob/main/docs/CURRENT_RESEARCH_STATUS.md)
 
@@ -79,7 +79,7 @@
 
 원본 교체, 행 중복·누락, 수치 변경, 다운로드 파일 손상, 잘못된 인원 수 값을 주입한 테스트 사례에서 검증기는 각 불일치를 오류로 탐지했습니다. 빌드는 검증에 실패하면 새 배포 산출물을 만들지 않습니다. 위험점수는 아직 실제 사후 지표와 비교해 검증하지 않았습니다.
 
-> **내 역할** · 서비스 방향과 요구사항 정의, 공공데이터·활용 시나리오 선정, 결과 검토와 저장소 운영 · [기여 기록](https://github.com/heechan9/triguard-ai/blob/main/CONTRIBUTIONS.md)
+> **내 역할** · 서비스 방향과 요구사항을 정하고, 사용할 공공데이터와 활용 시나리오를 선정했습니다. 구현 결과를 검토하고 저장소 운영을 맡았습니다. [기여 기록](https://github.com/heechan9/triguard-ai/blob/main/CONTRIBUTIONS.md)
 
 **근거:** [저장소](https://github.com/heechan9/triguard-ai) · [요구사항–검증 연결표](https://github.com/heechan9/triguard-ai/blob/main/docs/LECTURE_APPLICATION.md)
 
