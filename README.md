@@ -32,7 +32,7 @@ AI에 맡길 작업의 범위와 결과를 판단할 기준을 정하고, 실행
 
 ### 01 · [FabGuard AI](https://github.com/heechan9/fabguard-ai) — 반도체 생산 건 우선점검
 
-<a href="https://github.com/heechan9/fabguard-ai"><img src="./assets/projects/fabguard.svg" alt="FabGuard AI 프로젝트 미리보기" width="100%" /></a>
+<a href="https://github.com/heechan9/fabguard-ai"><img src="./assets/projects/fabguard-banner.png" alt="FabGuard AI 프로젝트 미리보기" width="100%" /></a>
 
 공개 반도체 생산데이터 UCI SECOM(1,567건, 익명 측정변수 590개)은 Fail 비율이 6.6%입니다. 이 데이터에서 점검 대상을 일부로 제한했을 때 Fail을 얼마나 포착하는지 평가했습니다. 자동 합격/불합격 판정은 범위에서 제외하고, 점검할 순서를 제안하는 데 집중했습니다. 앞 75% 기간으로 학습한 모델로 뒤 25% 기간을 순위화했습니다. 같은 모델을 0.5 임계값으로 분류하면 평가 구간의 Fail 24건을 하나도 찾지 못해, 순위 기반으로 정의한 이유를 뒷받침했습니다.
 
@@ -46,7 +46,7 @@ AI에 맡길 작업의 범위와 결과를 판단할 기준을 정하고, 실행
 
 ### 02 · [Bunkering AI](https://github.com/heechan9/bunkering-ai) — 선박 연료 구매 정책 비교
 
-<a href="https://github.com/heechan9/bunkering-ai"><img src="./assets/projects/bunkering.svg" alt="Bunkering AI 프로젝트 미리보기" width="100%" /></a>
+<a href="https://github.com/heechan9/bunkering-ai"><img src="./assets/projects/bunkering-banner.png" alt="Bunkering AI 프로젝트 미리보기" width="100%" /></a>
 
 선박은 연료가 떨어지면 안 되지만, 필요 이상으로 자주 급유하면 비용과 운용 부담이 커집니다. 2026 스마트해운물류×ICT 멘토링에서 팀장을 맡아, 가격·환율·잔량·잔여 항로를 보고 급유 여부를 정하는 정책을 비교했습니다. 초기 규칙 2종은 대부분의 항해에서 연료가 고갈됐습니다. 안정적으로 도착하는 정책과도 비교하기 위해 안전재고 규칙을 추가하고, 규칙 3종과 Double DQN을 같은 난수 조건의 가상 항해 100회로 평가했습니다.
 
@@ -60,7 +60,7 @@ AI에 맡길 작업의 범위와 결과를 판단할 기준을 정하고, 실행
 
 ### 03 · [Adversarial AI Security](https://github.com/th0oel/AdversarialAI_Security) — 선박 영상 분류 모델 강건성
 
-<a href="https://github.com/th0oel/AdversarialAI_Security"><img src="./assets/projects/adversarial.svg" alt="Adversarial AI Security 프로젝트 미리보기" width="100%" /></a>
+<a href="https://github.com/th0oel/AdversarialAI_Security"><img src="./assets/projects/adversarial-banner.png" alt="Adversarial AI Security 프로젝트 미리보기" width="100%" /></a>
 
 선박 종류를 인식하는 영상 AI는 사람이 알아채기 어려운 작은 입력 교란에도 판단을 바꿀 수 있습니다. 같은 멘토링 과정의 팀 프로젝트로, CNN·MobileNetV2의 정상 정확도를 기준선으로 두고 FGSM 교란 강도(ε)에 따른 변화를 측정했습니다. 공격 성공률은 원래 맞힌 이미지만 분모로 삼아 계산했고, ε=0에서 정상 평가 결과와 일치하는지 확인했습니다.
 
@@ -74,7 +74,7 @@ AI에 맡길 작업의 범위와 결과를 판단할 기준을 정하고, 실행
 
 ### 04 · [TriGuard AI](https://github.com/heechan9/triguard-ai) — 공공데이터 기반 지역 병력운용 위험 점검
 
-<a href="https://github.com/heechan9/triguard-ai"><img src="./assets/projects/triguard.svg" alt="TriGuard AI 프로젝트 미리보기" width="100%" /></a>
+<a href="https://github.com/heechan9/triguard-ai"><img src="./assets/projects/triguard-banner.png" alt="TriGuard AI 프로젝트 미리보기" width="100%" /></a>
 
 병무청·질병관리청·방위사업청 등 5개 기관의 데이터 12종은 형식과 기준이 달라, 지방청별 인력 운용 위험을 한눈에 비교하기 어렵습니다. 2026 공공데이터·AI 활용 경진대회 팀 프로젝트로, 인력·감염병·물자 지표를 합친 위험점수와 지도 대시보드를 만들었습니다. 담당자가 원자료 시점과 세부 지표를 확인한 뒤 판단하도록 설계했습니다. 공개 통계 화면에는 정의한 원본 대조 항목의 불일치를 배포 전에 탐지하는 검증기를 두었습니다. 대조 항목은 원본 해시, 연도·지방청 키 중복, 행 누락, 수치, 전국 합계, 다운로드 CSV입니다.
 
