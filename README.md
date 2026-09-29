@@ -7,10 +7,10 @@
 ### 반도체 제조와 산업 데이터 분석을 중심으로 프로젝트를 수행하고 있습니다
 
 한국공학대학교 전자공학부 임베디드시스템공학을 전공하고 스마트팩토리를 부전공으로 졸업했습니다.<br>
-2026년에는 공개 반도체 제조데이터 분석, 해양 운항 시뮬레이션, 선박 영상 AI 프로젝트를 진행했습니다.<br>
+2026년에는 공개 반도체 제조데이터 분석, 해양 운항 시뮬레이션, 선박 영상 AI와 법률 AI 안전성 검증 프로젝트를 진행했습니다.<br>
 **반도체 공정·품질·수율과 스마트제조 분야**에서 일하는 것을 목표로 합니다.
 
-[![대표 프로젝트](https://img.shields.io/badge/대표_프로젝트-4개-39D6C4?style=for-the-badge&labelColor=0B1117)](#대표-프로젝트--featured-projects)
+[![대표 프로젝트](https://img.shields.io/badge/대표_프로젝트-5개-39D6C4?style=for-the-badge&labelColor=0B1117)](#대표-프로젝트--featured-projects)
 [![실행 데모](https://img.shields.io/badge/LIVE-FABGUARD_AI-E4A83D?style=for-the-badge&labelColor=0B1117&logo=vercel&logoColor=white)](https://fabguard-ai.vercel.app/)
 [![협업](https://img.shields.io/badge/OPEN_TO-TECHNICAL_COLLABORATION-5A91B8?style=for-the-badge&labelColor=0B1117)](#기술-협업--technical-collaboration)
 
@@ -24,6 +24,7 @@
 | Bunkering AI | 연료 구매 정책을 안전성과 비용으로 비교 | 재고 보충·운영 정책을 여러 지표로 비교 |
 | Adversarial AI | 선박 영상 분류 모델의 입력 교란 취약성 | 비전 검사 모델의 신뢰성 평가 |
 | TriGuard AI | 여러 기관 데이터를 통합한 지역 위험 점검 | 이종 데이터 통합과 배포 전 정합성 검증 |
+| Judicial AI Safety Lab | 법률 AI의 근거·변경 이력과 사람 검토 절차 점검 | 근거 추적, 변경 영향 검토, 검증 상태 관리 |
 
 ## 대표 프로젝트 | Featured projects
 
@@ -83,6 +84,20 @@ AI에 맡길 작업의 범위와 결과를 판단할 기준을 정하고, 실행
 
 **근거:** [저장소](https://github.com/heechan9/triguard-ai) · [요구사항–검증 연결표](https://github.com/heechan9/triguard-ai/blob/main/docs/LECTURE_APPLICATION.md)
 
+---
+
+### 05 · [Judicial AI Safety Lab](https://github.com/heechan9/judicial-ai-safety-lab) — 법률 AI 근거 검증과 사람 검토
+
+<a href="https://github.com/heechan9/judicial-ai-safety-lab"><img src="./assets/projects/judicial.svg" alt="Judicial AI Safety Lab의 판례 근거 확인과 사람 검토 흐름" width="100%" /></a>
+
+법률 AI의 결과를 검토하려면 인용한 자료의 출처, 법령의 변경 여부, 확인되지 않은 근거를 함께 살펴야 합니다. 이를 점검하는 연구용 도구를 만들고, 앞선 네 프로젝트에서 사용한 기준선 비교·근거 추적·변경 감지 방법을 연결했습니다. 검토할 자료와 코드 버전을 고정해 결과를 추적하고, 자동 처리 후에는 사람의 검토를 기다리도록 구성했습니다. 사람이 검토 결과를 기록해야 최종 검토 패키지를 만들 수 있습니다.
+
+**공식 판례 30건의 상세자료 수집과 식별정보 대조를 완료**했고, 30건 모두 평가 전 자료 검사를 통과했습니다(v13 고정 평가 대상). 해당 자료를 바탕으로 평가 산출물과 전문가용 검토 자료를 구성했습니다. 이는 자료의 출처와 평가 준비 상태를 확인한 결과이며, 법률 판단의 정확도를 뜻하지는 않습니다. 실제 전문가 평가는 아직 시작 전입니다. 공식 법원 시스템이 아닌 연구용 프로젝트로, 근거 확인과 사람 검토 절차를 다룹니다.
+
+> **내 역할** · 연구문제와 활용 범위를 정하고, 기존 프로젝트에서 가져올 검증 방법을 선택했습니다. 근거 자료를 검토하고 최종 통합 여부를 결정하며 저장소 운영을 맡았습니다. [기여 기록](https://github.com/heechan9/judicial-ai-safety-lab/blob/main/CONTRIBUTORS.md)
+
+**근거:** [웹 데모](https://heechan9.github.io/judicial-ai-safety-lab/) · [30건 자료 검증 현황](https://github.com/heechan9/judicial-ai-safety-lab/blob/main/docs/V13_REAL_DATA_STATUS.md) · [저장소](https://github.com/heechan9/judicial-ai-safety-lab)
+
 ## 현재 작업 | Current work
 
 - **산업설비 시계열 데이터 품질.** FabGuard에서 설비 데이터 처리를 시험했습니다. 로컬 Fledge v3.1.0과 연동해 수집·재시작·중복 처리를 확인했고, Solar Data Tools로 공개 태양광 발전 시계열(호주·영국·프랑스 등)의 결측·품질 리포트를 생성했습니다. 실제 설비 센서 데이터가 아니라 공개 시계열에 품질 점검 방법을 먼저 적용해 본 단계입니다.
@@ -136,4 +151,4 @@ AI에 맡길 작업의 범위와 결과를 판단할 기준을 정하고, 실행
 
 ---
 
-*Electronics engineering graduate (embedded systems; minor in smart factory) aiming at semiconductor process, quality and yield engineering and smart manufacturing. In 2026, I worked on risk ranking with public semiconductor production data, policy comparison in a maritime fuel-purchasing simulation, and robustness testing of ship-image classifiers.*
+*Electronics engineering graduate (embedded systems; minor in smart factory) aiming at semiconductor process, quality and yield engineering and smart manufacturing. In 2026, I worked on risk ranking with public semiconductor production data, policy comparison in a maritime fuel-purchasing simulation, robustness testing of ship-image classifiers, and evidence verification for legal AI.*
