@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#101b2b"/><stop offset="1" stop-color="#28384a"/></linearGradient></defs>
+<rect width="1200" height="360" rx="24" fill="url(#bg)"/>
+<g transform="translate(70 70)" font-family="Arial,sans-serif">
+<text y="38" fill="#dfc694" font-size="18" font-weight="700" letter-spacing="3">LEGAL AI EVIDENCE REVIEW</text>
+<text y="98" fill="#faf5e9" font-size="44" font-weight="700">Judicial AI Safety Lab</text>
+<text y="143" fill="#bdc9d8" font-size="21">Source checks, change tracking and human review</text>
+<g transform="translate(0 184)" font-size="15" font-weight="700" fill="#f3e4c6">
+<rect width="182" height="38" rx="19" fill="#36465a"/><text x="91" y="25" text-anchor="middle">30-CASE PILOT</text>
+<rect x="196" width="182" height="38" rx="19" fill="#36465a"/><text x="287" y="25" text-anchor="middle">EVIDENCE CHECKS</text>
+<rect x="392" width="182" height="38" rx="19" fill="#36465a"/><text x="483" y="25" text-anchor="middle">HUMAN REVIEW</text>
+</g></g>
+<g transform="translate(900 76)" stroke="#dfc694" stroke-width="3" fill="none">
+<rect width="166" height="208" rx="12"/><path d="M30 44h106M30 75h80M30 106h95M30 137h55" opacity=".65"/>
+<circle cx="140" cy="180" r="43" fill="#28384a"/><path d="m120 180 14 14 28-32"/>
+</g></svg>
