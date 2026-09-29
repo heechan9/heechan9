@@ -88,7 +88,7 @@ AI에 맡길 작업의 범위와 결과를 판단할 기준을 정하고, 실행
 
 ### 05 · [Judicial AI Safety Lab](https://github.com/heechan9/judicial-ai-safety-lab) — 법률 AI 근거 검증과 사람 검토
 
-<a href="https://github.com/heechan9/judicial-ai-safety-lab"><img src="./assets/projects/judicial.svg" alt="Judicial AI Safety Lab의 판례 근거 확인과 사람 검토 흐름" width="100%" /></a>
+<a href="https://github.com/heechan9/judicial-ai-safety-lab"><img src="./assets/projects/judicial-dike.png" alt="디케와 저울을 모티브로 한 Judicial AI Safety Lab — 근거 확인과 사람 검토" width="100%" /></a>
 
 법률 AI의 결과를 검토하려면 인용한 자료의 출처, 법령의 변경 여부, 확인되지 않은 근거를 함께 살펴야 합니다. 이를 점검하는 연구용 도구를 만들고, 앞선 네 프로젝트에서 사용한 기준선 비교·근거 추적·변경 감지 방법을 연결했습니다. 검토할 자료와 코드 버전을 고정해 결과를 추적하고, 자동 처리 후에는 사람의 검토를 기다리도록 구성했습니다. 사람이 검토 결과를 기록해야 최종 검토 패키지를 만들 수 있습니다.
 
