@@ -96,7 +96,7 @@ PC에서 공식 자료를 수집하는 과정에서는 인증 실패 응답도 �
 
 **공식 판례 30건의 상세자료 수집과 식별정보 대조를 완료**했고, 30건 모두 평가 전 자료 검사를 통과했습니다(v13 고정 평가 대상). 해당 자료를 바탕으로 평가 산출물과 전문가용 검토 자료를 구성했습니다. 이는 자료의 출처와 평가 준비 상태를 확인한 결과이며, 법률 판단의 정확도를 뜻하지는 않습니다. 실제 전문가 평가는 아직 시작 전입니다. 공식 법원 시스템이 아닌 연구용 프로젝트로, 근거 확인과 사람 검토 절차를 다룹니다.
 
-> **내 역할** · 연구문제와 활용 범위를 정하고, 기존 프로젝트에서 가져올 검증 방법을 선택했습니다. 근거 자료를 검토하고 최종 통합 여부를 결정하며 저장소 운영을 맡았습니다. [기여 기록](https://github.com/heechan9/judicial-ai-safety-lab/blob/main/CONTRIBUTORS.md)
+> **내 역할** · 연구문제와 활용 범위를 정하고, 기존 프로젝트에서 가져올 검증 방법을 선택했습니다. 제 노트북의 Anaconda 환경에서 자료 수집·검증을 실행했고, 이 과정에서 드러난 오류는 AI 지원으로 검증 로직을 보완했습니다. 근거 자료 검토, 최종 통합 여부 결정과 저장소 운영을 맡았습니다. [기여 기록](https://github.com/heechan9/judicial-ai-safety-lab/blob/main/CONTRIBUTORS.md)
 
 **근거:** [웹 데모](https://heechan9.github.io/judicial-ai-safety-lab/) · [30건 자료 검증 현황](https://github.com/heechan9/judicial-ai-safety-lab/blob/main/docs/V13_REAL_DATA_STATUS.md) · [수집 오류와 검증 보완](https://github.com/heechan9/judicial-ai-safety-lab#v120--fail-closed-official-detail-payload-validation) · [저장소](https://github.com/heechan9/judicial-ai-safety-lab)
 
