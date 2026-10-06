@@ -28,7 +28,7 @@
 
 ## 대표 프로젝트 | Featured projects
 
-AI에 맡길 작업의 범위와 결과를 판단할 기준을 정하고, 실행 결과를 검토하는 역할을 맡았습니다. FabGuard에서는 초기 실험 계약을 제시했고, Adversarial AI에서는 제 PC에서 모델 평가와 필터 비교 실험을 직접 실행했습니다. 코드 구현·테스트·문서 작성에는 Codex 등 AI 도구를 활용했으며, 세부 역할과 팀원의 기여는 각 기여 기록에 정리했습니다.
+프로젝트의 주제와 작업 범위를 정하고, AI 도구와 팀원에게 작업을 나눠 진행했습니다. Adversarial AI에서는 제 PC에서 모델 평가와 필터 비교 실험을 실행하고, 원본 결과 파일을 검토에 사용했습니다. 구현과 검토에 참여한 도구, 제가 수행한 일, 팀원의 기여는 프로젝트별 기록에 남겼습니다.
 
 ### 01 · [FabGuard AI](https://github.com/heechan9/fabguard-ai) — 반도체 생산 건 우선점검
 
@@ -50,9 +50,9 @@ AI에 맡길 작업의 범위와 결과를 판단할 기준을 정하고, 실행
 
 선박은 연료가 떨어지면 안 되지만, 필요 이상으로 자주 급유하면 비용과 운용 부담이 커집니다. 2026 스마트해운물류×ICT 멘토링에서 팀장을 맡아, 가격·환율·잔량·잔여 항로를 보고 급유 여부를 정하는 정책을 비교했습니다. 초기 규칙 2종은 대부분의 항해에서 연료가 고갈됐습니다. 안정적으로 도착하는 정책과도 비교하기 위해 안전재고 규칙을 추가하고, 규칙 3종과 Double DQN을 같은 난수 조건의 가상 항해 100회로 평가했습니다.
 
-합성 시뮬레이션에서 두 정책은 100회 모두 목적지에 도착했습니다. DQN은 평균 보상이 가장 높았지만, 항해당 급유 행동이 5.31회로 안전재고 규칙(1.00회)보다 많았고 합성 비용지수도 847,118 대 545,393으로 높았습니다. 이 환경의 보상은 가격이 평균보다 낮을 때 급유하면 가점을 주지만 구매량과 구매비용은 반영하지 않습니다. 따라서 **보상을 높이는 행동과 비용을 줄이는 행동이 어긋날 수 있다**는 점을 확인했습니다. 구매비용과 잔여 연료를 보상에 반영하는 설계는 후속 실험 후보입니다.
+합성 시뮬레이션에서 Double DQN과 안전재고 규칙은 각각 100회 모두 목적지에 도착했습니다. DQN은 평균 보상이 가장 높았지만, 항해당 급유 행동이 5.31회로 안전재고 규칙(1.00회)보다 많았고 합성 비용지수도 847,118 대 545,393으로 높았습니다. 이 환경의 보상은 가격이 평균보다 낮을 때 급유하면 가점을 주지만 구매량과 구매비용은 반영하지 않습니다. 따라서 **보상을 높이는 행동과 비용을 줄이는 행동이 어긋날 수 있다**는 점을 확인했습니다. 구매비용과 잔여 연료를 보상에 반영하는 설계는 후속 실험 후보입니다.
 
-> **내 역할** · 팀장으로 문제와 요구사항을 정하고, State·Action·Reward 및 평가지표의 방향을 검토했습니다. 안전재고 기준선의 요구사항을 정의하고 작업 배정, 결과 검토, 멘토링 대응과 보고서 통합을 맡았습니다. Windows 독립 재현과 병합은 팀원이 수행했습니다. [기여 기록](https://github.com/heechan9/bunkering-ai/blob/main/CONTRIBUTIONS.md)
+> **내 역할** · 팀장으로 문제와 요구사항을 정하고, State·Action·Reward 및 평가지표의 방향을 검토했습니다. 안전재고 기준선의 요구사항을 정의하고, AI 지원 구현 후 팀원이 Windows에서 별도로 재현·검토하도록 작업을 나눴습니다. 결과 검토, 멘토링 대응과 보고서 통합을 맡았으며, 독립 재현과 병합은 이현수가 수행했습니다. [기여 기록](https://github.com/heechan9/bunkering-ai/blob/main/CONTRIBUTIONS.md)
 
 **근거:** [저장소](https://github.com/heechan9/bunkering-ai) · [공식 평가와 해석 범위](https://github.com/heechan9/bunkering-ai/blob/main/docs/technical/official_evaluation.md) · [연료수지·보상 진단](https://github.com/heechan9/bunkering-ai/blob/main/docs/technical/reward_diagnostics_results_4seed.md)
 
@@ -66,7 +66,7 @@ AI에 맡길 작업의 범위와 결과를 판단할 기준을 정하고, 실행
 
 공개 이미지 781장에서 정상 정확도가 더 높았던 MobileNetV2(78.5%)는 ε=0.01 교란에서 12.4%까지 떨어졌고, CNN은 64.5%에서 41.6%가 됐습니다. 이 실험에서는 정상 정확도가 높은 모델이 교란에 더 강하지 않았습니다. 비전 모델은 정상 정확도와 별도로 입력 변화 조건에서도 시험해야 한다는 점을 보여 준 결과입니다. 단순 필터 방어의 비교 결과는 저장소에 정리했습니다.
 
-> **내 역할** · 검증 범위와 저장소 통합 조건을 정하고, Windows PC에서 원본 781장과 두 모델로 테스트·근거 감사를 직접 실행했습니다(PR #3·#11). 가우시안·평균 필터 비교 실험도 직접 실행해 원본 결과 파일을 제공했습니다. 이미지 시각 검토는 팀원이 수행했습니다. [기여 기록](https://github.com/th0oel/AdversarialAI_Security/blob/main/CONTRIBUTIONS.md)
+> **내 역할** · 검증 범위와 저장소 통합 조건을 정하고, Windows PC에서 원본 781장과 두 모델로 테스트·근거 감사를 직접 실행했습니다(PR #3·#11). 가우시안·평균 필터 비교 실험도 직접 실행해 원본 결과 파일을 제공했습니다. 감사 도구는 Jules의 구현을 Codex가 다시 검토하며 잘못된 입력이 검사를 통과하는 경우를 보완했습니다. 저는 검토 범위와 통합 조건을 정했고, 이미지 시각 검토는 팀원이 수행했습니다. [기여 기록](https://github.com/th0oel/AdversarialAI_Security/blob/main/CONTRIBUTIONS.md)
 
 **근거:** [팀 공식 저장소](https://github.com/th0oel/AdversarialAI_Security) · [내 포크](https://github.com/heechan9/AdversarialAI_Security) · [FGSM·필터 방어 결과](https://github.com/th0oel/AdversarialAI_Security/blob/main/docs/CURRENT_RESEARCH_STATUS.md)
 
@@ -92,11 +92,13 @@ AI에 맡길 작업의 범위와 결과를 판단할 기준을 정하고, 실행
 
 법률 AI의 결과를 검토하려면 인용한 자료의 출처, 법령의 변경 여부, 확인되지 않은 근거를 함께 살펴야 합니다. 이를 점검하는 연구용 도구를 만들고, 앞선 네 프로젝트에서 사용한 기준선 비교·근거 추적·변경 감지 방법을 연결했습니다. 검토할 자료와 코드 버전을 고정해 결과를 추적하고, 자동 처리 후에는 사람의 검토를 기다리도록 구성했습니다. 사람이 검토 결과를 기록해야 최종 검토 패키지를 만들 수 있습니다.
 
+PC에서 공식 자료를 수집하는 과정에서는 인증 실패 응답도 정상 자료로 집계되는 문제가 드러났습니다. 이후 판례 상세정보의 필수 항목과 요청·응답의 판례 번호를 대조하고, 오류 응답은 수집 실패로 처리하도록 보완했습니다.
+
 **공식 판례 30건의 상세자료 수집과 식별정보 대조를 완료**했고, 30건 모두 평가 전 자료 검사를 통과했습니다(v13 고정 평가 대상). 해당 자료를 바탕으로 평가 산출물과 전문가용 검토 자료를 구성했습니다. 이는 자료의 출처와 평가 준비 상태를 확인한 결과이며, 법률 판단의 정확도를 뜻하지는 않습니다. 실제 전문가 평가는 아직 시작 전입니다. 공식 법원 시스템이 아닌 연구용 프로젝트로, 근거 확인과 사람 검토 절차를 다룹니다.
 
 > **내 역할** · 연구문제와 활용 범위를 정하고, 기존 프로젝트에서 가져올 검증 방법을 선택했습니다. 근거 자료를 검토하고 최종 통합 여부를 결정하며 저장소 운영을 맡았습니다. [기여 기록](https://github.com/heechan9/judicial-ai-safety-lab/blob/main/CONTRIBUTORS.md)
 
-**근거:** [웹 데모](https://heechan9.github.io/judicial-ai-safety-lab/) · [30건 자료 검증 현황](https://github.com/heechan9/judicial-ai-safety-lab/blob/main/docs/V13_REAL_DATA_STATUS.md) · [저장소](https://github.com/heechan9/judicial-ai-safety-lab)
+**근거:** [웹 데모](https://heechan9.github.io/judicial-ai-safety-lab/) · [30건 자료 검증 현황](https://github.com/heechan9/judicial-ai-safety-lab/blob/main/docs/V13_REAL_DATA_STATUS.md) · [수집 오류와 검증 보완](https://github.com/heechan9/judicial-ai-safety-lab#v120--fail-closed-official-detail-payload-validation) · [저장소](https://github.com/heechan9/judicial-ai-safety-lab)
 
 ## 현재 작업 | Current work
 
