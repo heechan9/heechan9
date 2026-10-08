@@ -42,6 +42,8 @@
 
 **근거:** [실행 데모](https://fabguard-ai.vercel.app/) · [V1 결과와 한계](https://github.com/heechan9/fabguard-ai/blob/main/results/v1/RESULTS_SUMMARY.md) · [보정·부트스트랩 등 추가 검증](https://github.com/heechan9/fabguard-ai/blob/main/docs/PHASE1_ADVANCED_VALIDATION.md) · [실험 계약](https://github.com/heechan9/fabguard-ai/blob/main/docs/validation/EXPERIMENT_CONTRACT.md) · [로드맵](https://github.com/heechan9/fabguard-ai/blob/main/docs/project/ROADMAP.md)
 
+**개발 노트:** [합격 판정보다 점검 순서를 다룬 이유](docs/PROJECT_NOTES.md#fabguard-ai)
+
 ---
 
 ### 02 · [Bunkering AI](https://github.com/heechan9/bunkering-ai) — 선박 연료 구매 정책 비교
@@ -55,6 +57,8 @@
 > **내 역할** · 팀장으로 문제와 요구사항을 정하고, State·Action·Reward 및 평가지표의 방향을 검토했습니다. 안전재고 기준선의 요구사항을 정의하고, AI 지원 구현 후 팀원이 Windows에서 별도로 재현·검토하도록 작업을 나눴습니다. 결과 검토, 멘토링 대응과 보고서 통합을 맡았으며, 독립 재현과 병합은 이현수가 수행했습니다. [기여 기록](https://github.com/heechan9/bunkering-ai/blob/main/CONTRIBUTIONS.md)
 
 **근거:** [저장소](https://github.com/heechan9/bunkering-ai) · [공식 평가와 해석 범위](https://github.com/heechan9/bunkering-ai/blob/main/docs/technical/official_evaluation.md) · [연료수지·보상 진단](https://github.com/heechan9/bunkering-ai/blob/main/docs/technical/reward_diagnostics_results_4seed.md)
+
+**개발 노트:** [보상과 비용이 다른 방향을 가리켰을 때](docs/PROJECT_NOTES.md#bunkering-ai)
 
 ---
 
@@ -70,6 +74,8 @@
 
 **근거:** [팀 공식 저장소](https://github.com/th0oel/AdversarialAI_Security) · [내 포크](https://github.com/heechan9/AdversarialAI_Security) · [FGSM·필터 방어 결과](https://github.com/th0oel/AdversarialAI_Security/blob/main/docs/CURRENT_RESEARCH_STATUS.md)
 
+**개발 노트:** [로컬 재현과 외부 검증을 구분하기](docs/PROJECT_NOTES.md#adversarial-ai-security)
+
 ---
 
 ### 04 · [TriGuard AI](https://github.com/heechan9/triguard-ai) — 공공데이터 기반 지역 병력운용 위험 점검
@@ -83,6 +89,8 @@
 > **내 역할** · 서비스 방향과 요구사항을 정하고, 사용할 공공데이터와 활용 시나리오를 선정했습니다. 구현 결과를 검토하고 저장소 운영을 맡았습니다. [기여 기록](https://github.com/heechan9/triguard-ai/blob/main/CONTRIBUTIONS.md)
 
 **근거:** [저장소](https://github.com/heechan9/triguard-ai) · [요구사항–검증 연결표](https://github.com/heechan9/triguard-ai/blob/main/docs/LECTURE_APPLICATION.md)
+
+**개발 노트:** [표시 수치를 원자료와 다시 대조하기](docs/PROJECT_NOTES.md#triguard-ai)
 
 ---
 
@@ -99,6 +107,8 @@ PC에서 공식 자료를 수집하는 과정에서는 인증 실패 응답도 �
 > **내 역할** · 연구문제와 활용 범위를 정하고, 기존 프로젝트에서 가져올 검증 방법을 선택했습니다. 제 노트북의 Anaconda 환경에서 자료 수집·검증을 실행했고, 이 과정에서 드러난 오류는 AI 지원으로 검증 로직을 보완했습니다. 근거 자료 검토, 최종 통합 여부 결정과 저장소 운영을 맡았습니다. [기여 기록](https://github.com/heechan9/judicial-ai-safety-lab/blob/main/CONTRIBUTORS.md)
 
 **근거:** [웹 데모](https://heechan9.github.io/judicial-ai-safety-lab/) · [30건 자료 검증 현황](https://github.com/heechan9/judicial-ai-safety-lab/blob/main/docs/V13_REAL_DATA_STATUS.md) · [수집 오류와 검증 보완](https://github.com/heechan9/judicial-ai-safety-lab#v120--fail-closed-official-detail-payload-validation) · [저장소](https://github.com/heechan9/judicial-ai-safety-lab)
+
+**개발 노트:** [응답 파일이 생겼다고 자료 수집 성공은 아니었다](docs/PROJECT_NOTES.md#judicial-ai-safety-lab)
 
 ## 현재 작업 | Current work
 
