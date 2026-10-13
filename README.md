@@ -114,7 +114,7 @@ PC에서 공식 자료를 수집하는 과정에서는 인증 실패 응답도 �
 
 ### [MelSpace](https://github.com/heechan9/Melspace) — 우주선 텔레메트리 이상 구간 탐지 (기획 단계)
 
-<a href="https://github.com/heechan9/Melspace"><img src="./assets/projects/melspace.svg" alt="MelSpace — 공개 NASA SMAP/MSL 우주선 텔레메트리 이상 구간 탐지, 기획 단계" width="100%" /></a>
+<a href="https://github.com/heechan9/Melspace"><img src="./assets/projects/melspace.svg" alt="MelSpace — 공개 NASA SMAP/MSL 우주선 텔레메트리 이상 구간 탐지, 기획 단계. 궤도·그래프는 개념도이며 실제 실험 결과가 아님" width="100%" /></a>
 
 공개 NASA SMAP/MSL 우주선 텔레메트리에서 이상 구간을 찾는 방법을 같은 기준으로 비교하는 학습형 프로젝트를 준비하고 있습니다. 채널 하나와 관리도 기준선부터 시작하며, 기준 구간과 임계값은 test 결과를 보기 전에 고정합니다. 앞선 프로젝트의 시간순 분할·기준 고정·근거 대조 방법을 새 데이터에 맞춰 옮기는 중입니다. **현재 기획 단계이며 구현과 실험은 아직 실행하지 않았습니다.** 실제 우주선 운용이나 고장 진단 시스템이 아닙니다.
 
