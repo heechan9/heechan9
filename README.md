@@ -1,22 +1,22 @@
-# Heechan Choi
-
-반도체·스마트제조에서 데이터로 **무엇을 먼저 점검할지** 정하고, 그 판단의 근거와 한계를 검증합니다.
-
-### 대표 판단 · FabGuard AI
-
-검사 여력이 제한된 상황을 문제로 정하고, 자동 불량 판정 대신 **엔지니어의 점검 순서를 제안하는 도구**로 범위를 잡았습니다. 공개 SECOM의 후기 평가 392건에서 위험 상위 40건을 먼저 봤을 때 전체 불량 24건 중 5건을 포착했습니다. 자동 불량 판정과 실제 공장 효과는 입증하지 않았습니다.
-
-[웹 데모](https://fabguard-ai.vercel.app/) · [V1 결과와 한계](https://github.com/heechan9/fabguard-ai/blob/main/results/v1/RESULTS_SUMMARY.md) · [내 역할과 AI 기여](https://github.com/heechan9/fabguard-ai/blob/main/docs/governance/AI_USAGE.md)
-
-- **[병커시유](https://github.com/heechan9/bunkering-ai)**: 팀장으로 급유 정책의 비교 기준을 정했습니다. 합성 항해에서 DQN의 보상은 높았지만 안전재고 규칙보다 비용지수가 높았습니다.
-- **[폴가드 (Adversarial AI Security)](https://github.com/th0oel/AdversarialAI_Security)**: 팀 프로젝트에서 선박 영상 모델의 강건성 실험을 제 PC에서 재현하고 결과를 검토했습니다.
-
-[대표 프로젝트 5개](#대표-프로젝트--featured-projects) · [기술 협업](#기술-협업--technical-collaboration)
+<div align="center">
 
 <img src="./assets/heechan-industrial-ai-profile-banner-v6.jpg" alt="스마트 항만, 반도체 팹, 산업 AI 관제 시스템을 연결한 최희찬의 산업 AI 포트폴리오" width="100%" />
 
-<details>
-<summary><b>프로젝트와 제조 분야의 연결</b></summary>
+# Heechan Choi
+
+### 반도체·스마트제조에서 데이터로 무엇을 먼저 점검할지 정하고, 그 판단의 근거와 한계를 검증합니다
+
+한국공학대학교 전자공학부 임베디드시스템공학을 전공하고 스마트팩토리를 부전공으로 졸업했습니다.<br>
+2026년에는 공개 반도체 제조데이터 분석, 해양 운항 시뮬레이션, 선박 영상 AI와 법률 AI 안전성 검증 프로젝트를 진행했습니다.<br>
+**반도체 공정·품질·수율과 스마트제조 분야**에서 일하는 것을 목표로 합니다.
+
+[![대표 프로젝트](https://img.shields.io/badge/대표_프로젝트-5개-39D6C4?style=for-the-badge&labelColor=0B1117)](#대표-프로젝트--featured-projects)
+[![실행 데모](https://img.shields.io/badge/LIVE-FABGUARD_AI-E4A83D?style=for-the-badge&labelColor=0B1117&logo=vercel&logoColor=white)](https://fabguard-ai.vercel.app/)
+[![협업](https://img.shields.io/badge/OPEN_TO-TECHNICAL_COLLABORATION-5A91B8?style=for-the-badge&labelColor=0B1117)](#기술-협업--technical-collaboration)
+
+</div>
+
+## 프로젝트와 제조 분야의 연결
 
 | 프로젝트 | 다룬 문제 | 제조 분야로 가져가려는 역량 |
 |---|---|---|
@@ -26,8 +26,6 @@
 | TriGuard AI | 여러 기관 데이터를 통합한 지역 위험 점검 | 이종 데이터 통합과 배포 전 정합성 검증 |
 | Judicial AI Safety Lab | 법률 AI의 근거·변경 이력과 사람 검토 절차 점검 | 근거 추적, 변경 영향 검토, 검증 상태 관리 |
 
-</details>
-
 ## 대표 프로젝트 | Featured projects
 
 프로젝트의 주제와 작업 범위를 정하고, AI 도구와 팀원에게 작업을 나눠 진행했습니다. Adversarial AI에서는 제 PC에서 모델 평가와 필터 비교 실험을 실행하고, 원본 결과 파일을 검토에 사용했습니다. 구현과 검토에 참여한 도구, 제가 수행한 일, 팀원의 기여는 프로젝트별 기록에 남겼습니다.
@@ -36,7 +34,7 @@
 
 <a href="https://github.com/heechan9/fabguard-ai"><img src="./assets/projects/fabguard.svg" alt="FabGuard AI 프로젝트 미리보기" width="100%" /></a>
 
-점검할 수 있는 생산 건수가 정해져 있다면, 어떤 건부터 확인해야 할까요? 공개 반도체 생산데이터 UCI SECOM(1,567건, 익명 측정변수 590개, Fail 비율 6.6%)으로 점검 순서를 매기고, 일부만 점검했을 때 Fail을 얼마나 찾는지 평가했습니다. 자동 합격/불합격 판정은 범위에서 제외하고, 점검할 순서를 제안하는 데 집중했습니다. 앞 75% 기간으로 학습한 모델로 뒤 25% 기간을 순위화했습니다. 같은 모델을 0.5 임계값으로 분류하면 평가 구간의 Fail 24건을 하나도 찾지 못해, 순위 기반으로 정의한 이유를 뒷받침했습니다.
+검사 여력이 제한된 현장에서, 엔지니어가 어떤 생산 건부터 점검할지 정하는 문제를 선택했습니다. 공개 반도체 생산데이터 UCI SECOM(1,567건, 익명 측정변수 590개, Fail 비율 6.6%)으로 점검 순서를 매기고, 일부만 점검했을 때 Fail을 얼마나 찾는지 평가했습니다. 자동 합격/불합격 판정은 범위에서 제외하고, 점검할 순서를 제안하는 데 집중했습니다. 앞 75% 기간으로 학습한 모델로 뒤 25% 기간을 순위화했습니다. 같은 모델을 0.5 임계값으로 분류하면 평가 구간의 Fail 24건을 하나도 찾지 못해, 순위 기반으로 정의한 이유를 뒷받침했습니다.
 
 평가 구간 392건에서 위험 상위 10%인 40건을 점검했을 때 **Fail 24건 중 5건을 포착**했습니다. 같은 수를 무작위로 점검할 때의 기대값(40 × 24/392 ≈ 2.4건)의 약 2배입니다(V1 모델). 점검 여력이 제한된 상황에서 순위화 신호는 있었지만, 평가 구간 AP(0.094)가 학습 구간 교차검증(0.216)보다 낮아 독립된 제조 데이터로 다시 검증해야 합니다.
 
